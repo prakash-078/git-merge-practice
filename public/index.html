@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Git Practice Task Manager</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <p class="eyebrow">GIT PRACTICE PROJECT</p>
+      <h1>Task Manager</h1>
+      <p class="subtitle">A small project for practising branches, commits, and merges.</p>
+    </header>
+
+    <section class="panel">
+      <h2>Add a task</h2>
+      <form id="task-form">
+        <label class="sr-only" for="task-title">Task title</label>
+        <input id="task-title" name="title" type="text" maxlength="100"
+               placeholder="e.g. Create a feature branch" required>
+        <button type="submit">Add task</button>
+      </form>
+      <p id="message" class="message" role="status"></p>
+    </section>
+
+    <section class="panel">
+      <div class="list-heading">
+        <h2>Your tasks</h2>
+        <span id="task-count" class="count">0 tasks</span>
+      </div>
+      <ul id="task-list" class="task-list"></ul>
+    </section>
+
+    <footer>Java backend · HTML · CSS · JavaScript · No database required</footer>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
